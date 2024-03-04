@@ -72,7 +72,7 @@ void loop()
       }
       if(radar.movingTargetDetected())
       {
-        Udp.beginPacket("192.168.1.255", 15001);
+        Udp.beginPacket("192.168.1.255", 16001);
         Udp.printf("%u\t%u\n",radar.movingTargetDistance(),radar.movingTargetEnergy());
         Udp.endPacket();
 
